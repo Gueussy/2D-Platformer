@@ -50,13 +50,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (isJumping == true)
         {
-            rb.AddForce(new Vector2(0f, jumpForce)); //Ajoute une force à y
+            rb.AddForce(new Vector2(0f, jumpForce)); //ajoute une force à y
 
             isJumping = false;
         }
     }
 
-    void Flip(float _velocity)
+    void Flip(float _velocity) //flip le sprite en fonction de sa direction
     {
         if (_velocity > 0.1f)
         {
